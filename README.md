@@ -1,3 +1,5 @@
 # JS-mini-games
 
-https://lili-126.github.io/JS-mini-games/slider-one/index.html
+
+colored-squares
+https://lili-126.github.io/JS-mini-games/colored-squares/index.html
