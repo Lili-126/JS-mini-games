@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze:wght@300;700&display=swap');
+$color: #ffffff;
+$background: linear-gradient(to right top, #0c0add, #4d4f8e, #6272dd, #195dd3, #0b08a1);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  body {
+    height: 100vh;
+    color: $color;
+    font-family: 'Grenze', serif;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color;
+  }
+
+  a:hover {
+    color: yellow;
+  }
+
+  .screen {
+    width: 100vw;
+    height: 100vh;
+    background: $background;
+  }
+
+  .screen__title {
+    padding-top: 25%;
+  }
+
+  .screen.up {
+    margin-top: -100vh;
+  }
+
+  .heading {
+    font-size: 6rem;
+  }
+
+  .start {
+    font-size: 3.5rem;
+}
+
+.list__buttons {
+
+}
