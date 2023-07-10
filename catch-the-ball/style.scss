@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Grenze:wght@300;700&display=swap');
 $color: #ffffff;
 $background: linear-gradient(to right top, #0c0add, #4d4f8e, #6272dd, #195dd3, #0b08a1);
+$green:  #1ECD97;
 
 * {
     box-sizing: border-box;
@@ -24,14 +25,19 @@ $background: linear-gradient(to right top, #0c0add, #4d4f8e, #6272dd, #195dd3, #
     color: yellow;
   }
 
-  .screen {
+  %screen-width {
     width: 100vw;
     height: 100vh;
     background: $background;
   }
 
-  .screen__title {
-    padding-top: 25%;
+  %screen-padding {
+    padding-top: 20%;
+  }
+
+  .screen {
+    @extend %screen-width;
+    @extend %screen-padding;
   }
 
   .screen.up {
@@ -46,6 +52,75 @@ $background: linear-gradient(to right top, #0c0add, #4d4f8e, #6272dd, #195dd3, #
     font-size: 3.5rem;
 }
 
-.list__buttons {
-
+.title {
+  font-size: 6rem;
+  margin-bottom: 50px;
 }
+
+.list__buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 830px;
+  margin: 0 auto;
+}
+
+.button__time {
+    width: 190px;
+    height: 60px;
+    border: 3px solid $color;
+    border-radius: 16px;
+    background: #9c27b000;
+    text-align: center;
+    color: $color;
+    letter-spacing: 1px;
+    font: {
+      size: 1.5rem;
+      weight: bold;
+    }
+    cursor: pointer;
+    transition: all 0.25s ease;
+    &:hover {
+      color: $color;
+      background: $green;
+    }
+    &:active {
+      letter-spacing: 2px ;
+    }
+    &:after {
+      content:"";
+    }
+  }
+  .onclic {
+    width: 40px;
+    border-color: $green;
+    border-width: 3px;
+    font-size: 0;
+    border-left-color: $green;
+    animation: rotating 2s 0.25s linear infinite;
+
+    &:after {
+      content: "";
+    }
+    &:hover {
+      color: $green;
+      background: $color;
+    }
+  }
+  .validate {
+    font-size: 13px;
+    color: $color;
+    background: $green;
+    &:after {
+      font-family: 'FontAwesome';
+      content: "\f00c";
+    }
+  }
+
+  @keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

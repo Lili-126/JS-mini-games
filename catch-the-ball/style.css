@@ -27,8 +27,8 @@ a:hover {
   background: linear-gradient(to right top, #0c0add, #4d4f8e, #6272dd, #195dd3, #0b08a1);
 }
 
-.screen__title {
-  padding-top: 25%;
+.screen {
+  padding-top: 20%;
 }
 
 .screen.up {
@@ -41,4 +41,76 @@ a:hover {
 
 .start {
   font-size: 3.5rem;
+}
+
+.title {
+  font-size: 6rem;
+  margin-bottom: 50px;
+}
+
+.list__buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 830px;
+  margin: 0 auto;
+}
+
+.button__time {
+  width: 190px;
+  height: 60px;
+  border: 3px solid #ffffff;
+  border-radius: 16px;
+  background: rgba(156, 39, 176, 0);
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.button__time:hover {
+  color: #ffffff;
+  background: #1ECD97;
+}
+.button__time:active {
+  letter-spacing: 2px;
+}
+.button__time:after {
+  content: "";
+}
+
+.onclic {
+  width: 40px;
+  border-color: #1ECD97;
+  border-width: 3px;
+  font-size: 0;
+  border-left-color: #1ECD97;
+  animation: rotating 2s 0.25s linear infinite;
+}
+.onclic:after {
+  content: "";
+}
+.onclic:hover {
+  color: #1ECD97;
+  background: #ffffff;
+}
+
+.validate {
+  font-size: 13px;
+  color: #ffffff;
+  background: #1ECD97;
+}
+.validate:after {
+  font-family: "FontAwesome";
+  content: "\f00c";
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=style.css.map */
