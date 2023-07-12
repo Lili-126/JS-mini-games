@@ -58,59 +58,30 @@ a:hover {
 .button__time {
   width: 190px;
   height: 60px;
-  border: 3px solid #ffffff;
-  border-radius: 16px;
-  background: rgba(156, 39, 176, 0);
   text-align: center;
   color: #ffffff;
   letter-spacing: 1px;
   font-size: 1.5rem;
   font-weight: bold;
+  border: none;
+  border-radius: 16px;
+  background-color: #ffe66b;
   cursor: pointer;
-  transition: all 0.25s ease;
+  outline: none;
+  transition: 0.5s all;
+  color: blue;
 }
 .button__time:hover {
-  color: #ffffff;
-  background: #1ECD97;
+  width: 220px;
+  height: 70px;
+  background-color: blue;
+  color: #ffe66b;
 }
 .button__time:active {
-  letter-spacing: 2px;
+  background-color: deepskyblue;
 }
-.button__time:after {
-  content: "";
-}
-
-.onclic {
-  width: 40px;
-  border-color: #1ECD97;
-  border-width: 3px;
-  font-size: 0;
-  border-left-color: #1ECD97;
-  animation: rotating 2s 0.25s linear infinite;
-}
-.onclic:after {
-  content: "";
-}
-.onclic:hover {
-  color: #1ECD97;
-  background: #ffffff;
-}
-
-.validate {
-  font-size: 13px;
-  color: #ffffff;
-  background: #1ECD97;
-}
-.validate:after {
-  font-family: "FontAwesome";
-  content: "\f00c";
-}
-
-@keyframes rotating {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button__time:focus {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: red;
 }/*# sourceMappingURL=style.css.map */
