@@ -67,9 +67,6 @@ $green:  #1ECD97;
 .button__time {
     width: 190px;
     height: 60px;
-    border: 3px solid $color;
-    border-radius: 16px;
-    background: #9c27b000;
     text-align: center;
     color: $color;
     letter-spacing: 1px;
@@ -77,7 +74,29 @@ $green:  #1ECD97;
       size: 1.5rem;
       weight: bold;
     }
+    border: none;
+    border-radius: 16px;
+    background-color: #ffe66b;
     cursor: pointer;
+    outline: none;
+    transition: 0.5s all;
+    color: blue;
+    &:hover {
+        width: 220px;
+        height: 70px;
+        background-color: blue;
+        color: #ffe66b;
+    }
+    &:active {
+        background-color: deepskyblue;
+    }
+    &:focus {
+        font-size: 1.75rem;
+        font-weight: bold;
+        color: red;
+    }
+  }
+    /* cursor: pointer;
     transition: all 0.25s ease;
     &:hover {
       color: $color;
@@ -123,4 +142,4 @@ $green:  #1ECD97;
     to {
       transform: rotate(360deg);
     }
-  }
+  } */
