@@ -165,6 +165,7 @@ a:hover {
   }
   .board {
     width: 360px;
+    box-shadow: -7px -7px 17px #2A333D, 7px 7px 17px #475462;
   }
 }
 @media screen and (max-width: 391px) {
@@ -175,7 +176,7 @@ a:hover {
     font-size: 3.1rem;
   }
   h3 {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
   }
   .title {
     font-size: 3.2rem;
