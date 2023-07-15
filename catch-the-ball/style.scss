@@ -187,6 +187,10 @@ $background: linear-gradient(to right top, #0c0add, #4d4f8e, #6272dd, #195dd3, #
   width: 360px;
   box-shadow: -3px -3px 7px #2A333D, 3px 3px 7px #475462;
 }
+
+h3 {
+  font-size: 1.1rem;
+}
 }
 
 @media screen and (max-width: 391px) {
@@ -199,9 +203,6 @@ $background: linear-gradient(to right top, #0c0add, #4d4f8e, #6272dd, #195dd3, #
     font-size: 3.1rem;
 }
 
-h3 {
-  font-size: 1.1rem;
-}
 
 .title {
   font-size: 3.2rem;
