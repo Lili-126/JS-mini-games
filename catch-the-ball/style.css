@@ -120,4 +120,67 @@ a:hover {
 
 .hide {
   opacity: 0;
+}
+
+@media screen and (max-width: 1440px) {
+  .screen__game {
+    padding: 25px;
+  }
+  .board {
+    height: 400px;
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 871px) {
+  .screen {
+    padding-top: 30%;
+  }
+  .title {
+    font-size: 4.5rem;
+  }
+  .list__buttons {
+    width: 690px;
+  }
+  .button__time {
+    width: 150px;
+    height: 55px;
+  }
+  .button__time:hover {
+    width: 180px;
+    height: 65px;
+  }
+}
+@media screen and (max-width: 671px) {
+  .heading {
+    font-size: 4.5rem;
+  }
+  .title {
+    font-size: 4rem;
+  }
+  .list__buttons {
+    display: block;
+  }
+  .button__time {
+    margin-right: 40%;
+  }
+  .board {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 391px) {
+  .heading {
+    font-size: 3.1rem;
+  }
+  h3 {
+    font-size: 2.17rem;
+  }
+  .title {
+    font-size: 3.2rem;
+  }
+  .button__time {
+    margin-right: 60%;
+  }
+  .board {
+    width: 280px;
+  }
 }/*# sourceMappingURL=style.css.map */

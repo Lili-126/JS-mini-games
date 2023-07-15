@@ -71,7 +71,7 @@ function decreaseTime() {  //запускаем таймер времени
 };
 
 function finishGame() {
-    board.innerHTML = `<h2 class ="title">Your score: <span class ="primary">${score}</span></h2>`;
+    board.innerHTML = `<h2 class ="title">Score: <span class ="primary">${score}</span></h2>`;
     spanTime.parentNode.classList.add('hide');
 };
 
