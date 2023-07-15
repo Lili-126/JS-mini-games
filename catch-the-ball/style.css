@@ -2,6 +2,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  overflow: hidden;
 }
 
 body {
@@ -159,26 +160,25 @@ a:hover {
   }
   .list__buttons {
     display: block;
-  }
-  .button__time {
-    margin-right: 40%;
+    width: 160px;
+    padding: 0;
   }
   .board {
     width: 360px;
   }
 }
 @media screen and (max-width: 391px) {
+  .screen {
+    padding-top: 40%;
+  }
   .heading {
     font-size: 3.1rem;
   }
   h3 {
-    font-size: 2.17rem;
+    font-size: 1.9rem;
   }
   .title {
     font-size: 3.2rem;
-  }
-  .button__time {
-    margin-right: 60%;
   }
   .board {
     width: 280px;
