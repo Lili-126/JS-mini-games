@@ -10,17 +10,21 @@
     <section class="screen">
         <h1 class="heading">Catch the ball</h1>
         <h3>
-            <a href="#" class="start" id="start">Start game</a>
+            <a href="#" id="start">Start game</a>
         </h3>
     </section>
     <section class="screen">
         <h2 class="title">Pick a time</h2>
-        <div class="list__buttons" id="time-list">
-            <button class="button__time" data-time="20">20sec</button>
-            <button class="button__time" data-time="30">30sec</button>
-            <button class="button__time" data-time="10">10sec</button>
-            <button class="button__time" data-time="60">60sec</button>
-        </div>
+        <ul class="list__buttons" id="time-list">
+            <li><button class="button__time" data-time="10">10sec</button></li>
+            <li><button class="button__time" data-time="20">20sec</button></li>
+            <li><button class="button__time" data-time="30">30sec</button></li>
+            <li><button class="button__time" data-time="60">60sec</button></li>
+        </ul>
+    </section>
+    <section class="screen screen__game">
+        <h3>Time left  <span id="time">00:00</span></h3>
+        <div class="board" id="board"></div>
     </section>
     <script src="main.js"></script>
 </body>
