@@ -10,6 +10,11 @@ body {
   font-family: "Grenze", serif;
   text-align: center;
   overflow: hidden;
+  font-size: 3.5rem;
+}
+
+ul, li {
+  list-style: none;
 }
 
 a {
@@ -18,7 +23,7 @@ a {
 }
 
 a:hover {
-  color: yellow;
+  color: #ffe66b;
 }
 
 .screen {
@@ -31,16 +36,16 @@ a:hover {
   padding-top: 20%;
 }
 
+.screen__game {
+  padding: 70px;
+}
+
 .screen.up {
   margin-top: -100vh;
 }
 
 .heading {
   font-size: 6rem;
-}
-
-.start {
-  font-size: 3.5rem;
 }
 
 .title {
@@ -51,7 +56,7 @@ a:hover {
 .list__buttons {
   display: flex;
   justify-content: space-between;
-  width: 830px;
+  width: 870px;
   margin: 0 auto;
 }
 
@@ -84,4 +89,35 @@ a:hover {
   font-size: 1.75rem;
   font-weight: bold;
   color: red;
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 650px;
+  height: 650px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background: linear-gradient(118.38deg, #29323C -4.6%, #485563 200.44%);
+  box-shadow: -10px -10px 23px #2A333D, 12px 10px 23px #475462;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.circle {
+  background: linear-gradient(90deg, #16D9E3 0%, #30C7EC 47%, #46AEF7 100%);
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.primary {
+  color: #ffe66b;
+}
+
+.hide {
+  opacity: 0;
 }/*# sourceMappingURL=style.css.map */
