@@ -185,6 +185,7 @@ $background: linear-gradient(to right top, #0c0add, #4d4f8e, #6272dd, #195dd3, #
 
 .board {
   width: 360px;
+  box-shadow: -7px -7px 17px #2A333D, 7px 7px 17px #475462;
 }
 }
 
@@ -199,7 +200,7 @@ $background: linear-gradient(to right top, #0c0add, #4d4f8e, #6272dd, #195dd3, #
 }
 
 h3 {
-  font-size: 1.9rem;
+  font-size: 1.7rem;
 }
 
 .title {
