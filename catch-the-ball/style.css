@@ -11,7 +11,7 @@ body {
   font-family: "Grenze", serif;
   text-align: center;
   overflow: hidden;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 
 ul, li {
@@ -34,11 +34,11 @@ a:hover {
 }
 
 .screen {
-  padding-top: 20%;
+  padding-top: 10%;
 }
 
 .screen__game {
-  padding: 70px;
+  padding: 30px;
 }
 
 .screen.up {
@@ -97,8 +97,8 @@ a:hover {
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 600px;
-  height: 600px;
+  width: 550px;
+  height: 550px;
   margin: 0 auto;
   margin-top: 50px;
   background: linear-gradient(118.38deg, #29323C -4.6%, #485563 200.44%);
