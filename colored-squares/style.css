@@ -17,12 +17,12 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 800px;
+    max-width: 740px;
   }
 
   .square {
-    width: 40px;
-    height: 40px;
+    width: 37px;
+    height: 37px;
     background: #1d1d1d;
     margin: 2px;
     box-shadow: 0 0 1px rgb(45, 50, 48);
